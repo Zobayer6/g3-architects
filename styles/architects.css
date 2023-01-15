@@ -10,6 +10,38 @@
   width: 100%;
   height: 1080px;
 }
+
+.fast_section {
+  /* background: rgba(255, 144, 14, 0.1); */
+}
+.topnav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topnav a {
+  /* float: left; */
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav1 a {
+  /* float: left; */
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.spli {
+  float: right;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -19,7 +51,6 @@ nav {
   font-size: 45px;
   color: #131313;
   margin-top: 50px;
-  margin-left: 228px;
 }
 nav ul {
   display: flex;
@@ -49,7 +80,7 @@ nav ul a {
 
 .banner-text-title {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 54px;
   text-align: center;
 }
 .banner-description {
@@ -96,7 +127,16 @@ nav ul a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-  margin-left: 70px;
+  margin-left: 300px;
+}
+.quick-list-img {
+  height: 200px;
+  width: 200px;
+}
+.quick-list-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .list-one {
@@ -143,6 +183,22 @@ nav ul a {
   color: #131313;
   margin-bottom: 20px;
 }
+.title-description {
+  margin-top: 5px;
+}
+
+.architect-title-two {
+  padding: 15px;
+}
+.architect-title-three {
+  padding: 15px;
+}
+.architect-title-four {
+  padding: 15px;
+}
+.architect-title-five {
+  padding: 15px;
+}
 /* .dash {
   color: #ff900e;
   font-size: 80px;
@@ -171,13 +227,13 @@ nav ul a {
   font-size: 65px;
   color: #ffffff;
   text-align: center;
-  width: 342px;
-  height: 200px;
+  width: 300px;
+  height: 160px;
   padding: 30px;
   line-height: 0.6;
   position: absolute;
-  bottom: -2090px;
-  right: 435px;
+  bottom: -1799px;
+  right: 494px;
 }
 .ex {
   font-weight: 500;
@@ -198,22 +254,22 @@ nav ul a {
 
 .architect-title-two {
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
 }
 .architect-title-three {
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
 }
 .architect-title-four {
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
 }
 .architect-title-five {
   background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
 }
 
@@ -308,14 +364,12 @@ nav ul a {
 /* extra section css */
 
 .aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  background-color: white;
   width: 400px;
   justify-content: center;
-
   margin: 100px auto;
   width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .related-author {
@@ -334,7 +388,7 @@ a:link {
 }
 
 a:visited {
-  color: #1098ad;
+  color: #424242;
   text-decoration: none;
 }
 
@@ -358,17 +412,19 @@ h2::after {
   padding: 5px 10px;
   position: absolute;
   right: 244px;
-  top: 3730px;
+  top: 3655px;
 }
 
 /* footer */
 
 .foot {
+  margin: auto;
   background: #fff4e7;
   border-radius: 8px;
-  height: 100px;
+  padding: 50px;
   margin-top: 130px;
   margin-bottom: 130px;
+  width: 80%;
 }
 footer p {
   font-weight: 400;
@@ -376,7 +432,6 @@ footer p {
   text-align: center;
 
   color: #424242;
-  padding-top: 45px;
 }
 
 /* resposive */
@@ -439,5 +494,32 @@ footer p {
     justify-content: center;
     gap: 50px;
     align-content: center;
+  }
+
+  .topnav a {
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .topnav1 {
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a.spli {
+    float: left;
+    text-align: center;
+  }
+  .topnav {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
   }
 }
