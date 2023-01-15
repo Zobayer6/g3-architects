@@ -218,6 +218,7 @@ nav ul a {
 }
 
 /* some facts */
+
 .facts {
   margin-bottom: 150px;
 }
@@ -244,10 +245,17 @@ nav ul a {
   border-radius: 8px;
   text-align: center;
   padding: 35px 15px 20px;
+  transition: width 2s, height 2s, transform 2s;
   /* justify-content: center; */
   /* align-items: center; */
   /* display: flex; */
   /* transform: rotate(90deg); */
+}
+
+.box:hover {
+  width: 200px;
+  height: 200px;
+  transform: rotate(90deg);
 }
 
 .facts-box {
@@ -268,6 +276,7 @@ nav ul a {
 }
 
 /* sponsor */
+
 .sponsor-detail {
   text-align: center;
 }
@@ -297,6 +306,7 @@ nav ul a {
 }
 
 /* extra section css */
+
 .aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
