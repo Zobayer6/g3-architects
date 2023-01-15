@@ -378,3 +378,18 @@ footer p {
   color: #424242;
   padding-top: 45px;
 }
+
+/* resposive */
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  .nav-title {
+    margin-left: 10px;
+  }
+}
